@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #f0f0f0;
+  --text-color: #333;
+  --font-family: 'Arial', sans-serif;
+  --link-color: orange;
+  --link-hover-color: darkorange;
+  --header-bg-color: #333;
+  --footer-bg-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  font-family: var(--font-family);
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+div.notas {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  padding: 15px;
+  margin: 20px 0;
+  max-width: fit-content;
+  display: inline-block;
+}
+
+/* Estilo para links --> */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  margin: 0 15px;
+  font-style: bolder;
+  
+}
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+a::before {
+  content: url(../imagens/icons/link.png);
+  vertical-align: middle;
+}
+/* <-- FIM do estilo para links */
+
+/* Estilo para o terminal --> */
+.terminal {
+  background-color: #1e1e1e; /* Dark background */
+  color: #00ff00; /* Green text */
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  overflow: auto; /* Handle long content */
+  min-height: 400px;
+}
+.terminal header {
+  padding: 5px;
+  font-style: bolder;
+  text-align: left;
+}
+
+.prompt {
+  color: #00d7ff; /* Cyan for the prompt */
+  font-weight: bold;
+}
+
+/* <-- FIM do estilo para o terminal */
+
+/* Estilo para o botão de voltar ao topo --> */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-to-top:hover {
+  background-color: darkgreen;
+}
+/* <-- FIM do estilo para o botão de voltar ao topo */
+
+/* Estilo para botões --> */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+button:hover {
+  background-color: darkgreen;
+}
+/* <-- FIM do estilo para botões */
+
+
+/* Estilo para listas --> */
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
