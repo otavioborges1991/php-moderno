@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O tag script</title>
+    <title>Shot Tag php</title>
     <link rel="stylesheet" href="../../styles/estilo.css">
 </head>
 
 <body>
     <header>
-        <h1>Tag script com paramêtro language="php"</h1>
+        <h1>Shot tag php &lt;?= ?&gt;</h1>
     </header>
     <main>
 
@@ -20,10 +20,12 @@
             </header>
             <p><span class="prompt">otavio@windows:~$</span><?php echo $_SERVER['SCRIPT_NAME']; ?></p>
             <?php
-            echo "<pre>&lt;script language='php'&gt;\necho 'Olá Mundo!\n'&lt;/script&gt;</pre>";
-            echo "Este tipo de tag acima não é mais recomendado, pois o PHP já é interpretado por padrão.";
-            echo "<br>Você pode usar a tag padrão do PHP assim:";
-            echo "<pre>&lt;?php\necho 'Olá Mundo!';\n?&gt;</pre>";
+            echo "Shot tag: <br>";
+            echo "<code>&lt;?='Olá, mundo' ?&gt;</code> Resulta em: <br>";
+            ?>
+            <?= "Olá, mundo!<br>" ?>
+            <?php
+            echo "é uma forma abreviada de escrever o comando <code>echo</code> no PHP. É uma maneira mais concisa e legível de imprimir valores na tela.";
             ?>
         </div>
         <br>

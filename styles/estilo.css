@@ -5,8 +5,8 @@
   --secondary-color: #f0f0f0;
   --text-color: #333;
   --font-family: 'Arial', sans-serif;
-  --link-color: orange;
-  --link-hover-color: darkorange;
+  --link-color: darkorange;
+  --link-hover-color: rgb(177, 98, 1);
   --header-bg-color: #333;
   --footer-bg-color: #333;
 }

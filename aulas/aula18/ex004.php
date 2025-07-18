@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O tag script</title>
+    <title>Shot Open Tag</title>
     <link rel="stylesheet" href="../../styles/estilo.css">
 </head>
 
 <body>
     <header>
-        <h1>Tag script com paramêtro language="php"</h1>
+        <h1>Shot open tag &lt;? ?&gt;</h1>
     </header>
     <main>
 
@@ -20,10 +20,8 @@
             </header>
             <p><span class="prompt">otavio@windows:~$</span><?php echo $_SERVER['SCRIPT_NAME']; ?></p>
             <?php
-            echo "<pre>&lt;script language='php'&gt;\necho 'Olá Mundo!\n'&lt;/script&gt;</pre>";
-            echo "Este tipo de tag acima não é mais recomendado, pois o PHP já é interpretado por padrão.";
-            echo "<br>Você pode usar a tag padrão do PHP assim:";
-            echo "<pre>&lt;?php\necho 'Olá Mundo!';\n?&gt;</pre>";
+            echo "short open tag tem que ser habilitado no php.ini, caso contrário não funcionará.\n";
+            echo "<pre>&lt;? echo 'olá, mundo'?&gt;</pre>"
             ?>
         </div>
         <br>
