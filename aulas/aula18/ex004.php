@@ -16,7 +16,7 @@
 
         <div class="terminal">
             <header>
-                <h4>Terminal</h1>
+                <h4>Terminal. かっこいい</h1>
             </header>
             <p><span class="prompt">otavio@windows:~$</span><?php echo $_SERVER['SCRIPT_NAME']; ?></p>
             <?php

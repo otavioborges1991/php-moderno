@@ -65,6 +65,12 @@ a::before {
   content: url(../imagens/icons/link.png);
   vertical-align: middle;
 }
+
+a.folder::before {
+  content: url(../imagens/icons/folder.png);
+  vertical-align: middle;
+}
+
 /* <-- FIM do estilo para links */
 
 /* Estilo para o terminal --> */
@@ -77,6 +83,7 @@ a::before {
   overflow: auto; /* Handle long content */
   min-height: 400px;
 }
+
 .terminal header {
   padding: 5px;
   font-style: bolder;
@@ -91,6 +98,7 @@ a::before {
 /* <-- FIM do estilo para o terminal */
 
 /* Estilo para o botão de voltar ao topo --> */
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -102,9 +110,11 @@ a::before {
   text-decoration: none;
   font-weight: bold;
 }
+
 .back-to-top:hover {
   background-color: darkgreen;
 }
+
 /* <-- FIM do estilo para o botão de voltar ao topo */
 
 /* Estilo para botões --> */
@@ -117,6 +127,7 @@ button {
   cursor: pointer;
   font-family: var(--font-family);
 }
+
 button:hover {
   background-color: darkgreen;
 }
@@ -128,6 +139,7 @@ ol {
   list-style-type: decimal;
   padding-left: 20px;
 }
+
 ul {
   list-style-type: disc;
   padding-left: 20px;
