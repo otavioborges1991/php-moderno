@@ -48,6 +48,10 @@ div.notas {
   display: inline-block;
 }
 
+pre {
+  white-space: pre-wrap; /* Preserve whitespace */
+}
+
 /* Estilo para links --> */
 a {
   color: var(--link-color);
@@ -61,13 +65,18 @@ a:hover {
   text-decoration: underline;
 }
 
-a::before {
+a.link::before {
   content: url(../imagens/icons/link.png);
   vertical-align: middle;
 }
 
 a.folder::before {
   content: url(../imagens/icons/folder.png);
+  vertical-align: middle;
+}
+
+a.file::before {
+  content: url(../imagens/icons/file_open.png);
   vertical-align: middle;
 }
 
