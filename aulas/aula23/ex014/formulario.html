@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 00</title>
+    <link rel="stylesheet" href="../../../styles/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Formulários
+        </h1>
+        <p>
+            <a class="link" target="_blank" rel="noopener" href="">
+                Template
+            </a>
+        </p>
+    </header>
+    <main>
+        <h2>formulário</h2>
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>Preencha os campos abaixo para se cadastrar:</p>
+            <form action="cadastro.php" method="get">
+                <div class="labels">
+                    <label for="nome">Nome:</label>
+                    <label for="email">Email:</label>
+                    <label for="senha">Senha:</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="nome" name="nome" required>
+                    <input type="email" id="email" name="email" required>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito os termos e condições</label>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </fieldset>
+        <button onclick="window.history.back()">Voltar</button>
+    </main>
+    <footer>
+        <p>
+            <a class="link" target="_blank" rel="noopener" href="https://www.estudonauta.com/">
+                Estudonauta
+            </a>
+        </p>
+        <p>
+            &copy; 2023 - Todos os direitos reservados.
+        </p>
+    </footer>
+</body>
+
+</html>

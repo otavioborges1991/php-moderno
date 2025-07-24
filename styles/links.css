@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* Estilo para links --> */
+:root {
+    --link-color: darkorange;
+    --link-hover-color: rgb(177, 98, 1);
+    --link-font-family: 'Arial', sans-serif;
+    --link-font-weight: bold;
+    --link-font-style: normal;
+    --link-font-size: 16px;
+    --link-text-decoration: none;
+    --link-icon-size: 16px;
+    --link-icon-margin: 0 5px;
+    --link-icon-vertical-align: middle;
+    --link-icon-color: inherit; /* Inherit color from link */
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: var(--link-text-decoration);
+  margin: 0 15px;
+  font-family: var(--link-font-family);
+  font-weight: var(--link-font-weight);
+  font-style: var(--link-font-style);
+  font-size: var(--link-font-size);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+a.link::before {
+  content: url(../imagens/icons/link.png);
+  vertical-align: var(--link-icon-vertical-align);
+  width: var(--link-icon-size);
+  height: var(--link-icon-size);
+  margin: var(--link-icon-margin);
+  color: var(--link-icon-color);
+  display: inline-block;
+}
+
+a.folder::before {
+  content: url(../imagens/icons/folder.png);
+  vertical-align: var(--link-icon-vertical-align);
+  width: var(--link-icon-size);
+  height: var(--link-icon-size);
+  margin: var(--link-icon-margin);
+  color: var(--link-icon-color);
+  display: inline-block;
+}
+
+a.file::before {
+  content: url(../imagens/icons/file_open.png);
+  vertical-align: var(--link-icon-vertical-align);
+  width: var(--link-icon-size);
+  height: var(--link-icon-size);
+  margin: var(--link-icon-margin);
+  color: var(--link-icon-color);
+  display: inline-block;
+}

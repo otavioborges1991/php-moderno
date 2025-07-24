@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*
+    Estilo para a tipografia
+    Este arquivo contém estilos para a tipografia, incluindo fontes, tamanhos e cores.
+ */
+
+:root {
+    --font-family: Arial, sans-serif;
+    --font-size: 16px;
+    --heading-font-size: 24px;    
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+}
+
+

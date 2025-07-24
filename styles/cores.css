@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #f0f0f0;
+  --text-color: #333;
+  --header-bg-color: #333;
+  --footer-bg-color: #333;
+}

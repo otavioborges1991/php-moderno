@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+/* Estilo para o emulador de terminal --> */
+.terminal {
+    background-color: #1e1e1e; /* Dark background */
+    color: #00ff00; /* Green text */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    min-height: 400px;
+    resize: both; /* Allow resizing */
+    overflow: scroll; /* Enable scrolling */
+    border: 1px solid #333; /* Border for the terminal */
+    padding: 10px; /* Padding for content */
+}
+
+.terminal header {
+    padding: 5px;
+    font-style: bolder;
+    text-align: left;
+}
+
+.prompt {
+    color: #00d7ff; /* Cyan for the prompt */
+    font-weight: bold;
+}
+
