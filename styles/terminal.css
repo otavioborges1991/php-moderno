@@ -1,20 +1,23 @@
 @charset "UTF-8";
+@import url('cores.css');
 
 
 /* Estilo para o emulador de terminal --> */
 .terminal {
-    background-color: #1e1e1e; /* Dark background */
-    color: #00ff00; /* Green text */
     font-family: 'Courier New', Courier, monospace; /* Monospaced font */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: #00ff00; /* Green text */
+    background-color: #1e1e1e; /* Dark background */
     min-height: 400px;
     resize: both; /* Allow resizing */
-    overflow: scroll; /* Enable scrolling */
-    border: 1px solid #333; /* Border for the terminal */
-    padding: 10px; /* Padding for content */
+    overflow: hidden auto; /* Enable scrolling */
+    border: 2px solid rgb(53, 53, 53); /* Border for the terminal */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
+.output {
+    padding: 10px; /* Padding inside the terminal */
+}
 .terminal header {
     padding: 5px;
     font-style: bolder;
@@ -24,5 +27,20 @@
 .prompt {
     color: #00d7ff; /* Cyan for the prompt */
     font-weight: bold;
+}
+
+/*
+    barra de rolagem personalizada para o terminal */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */   
+    height: 12px; /* Height of the scrollbar */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+::-webkit-scrollbar-track {
+    background-color: #333; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
 }
 

@@ -11,9 +11,10 @@
     --link-text-decoration: none;
     --link-icon-size: 16px;
     --link-icon-margin: 0 5px;
-    --link-icon-vertical-align: middle;
+    --link-icon-vertical-align: -30%;
     --link-icon-color: inherit; /* Inherit color from link */
-}
+    --link-icon-size: var(--link-font-size); /* Use the same size as font */
+  }
 
 a {
   color: var(--link-color);
@@ -25,6 +26,12 @@ a {
   font-size: var(--link-font-size);
 }
 
+a::before {
+  vertical-align: var(--link-icon-vertical-align);
+  height: var(--link-icon-size);
+}
+
+
 a:hover {
   color: var(--link-hover-color);
   text-decoration: underline;
@@ -32,7 +39,6 @@ a:hover {
 
 a.link::before {
   content: url(../imagens/icons/link.png);
-  vertical-align: var(--link-icon-vertical-align);
   width: var(--link-icon-size);
   height: var(--link-icon-size);
   margin: var(--link-icon-margin);
@@ -42,7 +48,6 @@ a.link::before {
 
 a.folder::before {
   content: url(../imagens/icons/folder.png);
-  vertical-align: var(--link-icon-vertical-align);
   width: var(--link-icon-size);
   height: var(--link-icon-size);
   margin: var(--link-icon-margin);
@@ -52,7 +57,6 @@ a.folder::before {
 
 a.file::before {
   content: url(../imagens/icons/file_open.png);
-  vertical-align: var(--link-icon-vertical-align);
   width: var(--link-icon-size);
   height: var(--link-icon-size);
   margin: var(--link-icon-margin);

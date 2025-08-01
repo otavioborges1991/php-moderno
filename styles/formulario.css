@@ -77,11 +77,13 @@ div.labels {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 div.inputs {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* Estilo para campos de seleção (select) */

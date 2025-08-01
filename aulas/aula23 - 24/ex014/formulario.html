@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 00</title>
+    <title>Aula 23</title>
     <link rel="stylesheet" href="../../../styles/estilo.css">
 </head>
-
 <body>
     <header>
         <h1>
             Formulários
         </h1>
-        <p>
-            <a class="link" target="_blank" rel="noopener" href="">
-                Template
-            </a>
-        </p>
     </header>
-    <main>
-        <h2>formulário</h2>
+    <main class="flex-center-items">
+        <h2>Formulário</h2>
         <fieldset>
             <legend>Cadastro</legend>
             <p>Preencha os campos abaixo para se cadastrar:</p>
-            <form action="cadastro.php" method="get">
-                <div class="labels">
-                    <label for="nome">Nome:</label>
-                    <label for="email">Email:</label>
-                    <label for="senha">Senha:</label>
-                </div>
-                <div class="inputs">
-                    <input type="text" id="nome" name="nome" required>
-                    <input type="email" id="email" name="email" required>
-                    <input type="password" id="senha" name="senha" required>
+            <form action="cadastro.php" method="post">
+                <div class="flex-row">
+                    <div class="labels">
+                        <label for="nome">Nome:</label>
+                        <label for="email">Email:</label>
+                        <label for="senha">Senha:</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="nome" name="nome" required>
+                        <input type="email" id="email" name="email" required>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" id="termos" name="termos" required>
                     <label for="termos">Aceito os termos e condições</label>
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Cadastrar</button>
                 </div>
             </form>
         </fieldset>
@@ -55,5 +50,4 @@
         </p>
     </footer>
 </body>
-
 </html>

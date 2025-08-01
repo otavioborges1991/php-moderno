@@ -4,26 +4,22 @@
 @import url('formulario.css');
 @import url('cores.css');
 @import url('tipografia.css');
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 header {
   background-color: var(--header-bg-color);
   color: white;
   padding: 10px 20px;
   text-align: center;
 }
-
 main {
   padding: 20px;
   font-family: var(--font-family);
+  margin-bottom: 75px;
 }
-
 footer {
   background-color: var(--footer-bg-color);
   color: white;
@@ -33,7 +29,9 @@ footer {
   width: 100%;
   bottom: 0;
 }
-
+div.margin {
+  margin: 20px;
+}
 div.notas {
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
@@ -42,14 +40,15 @@ div.notas {
   max-width: fit-content;
   display: inline-block;
 }
-
+div.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 pre {
   white-space: pre-wrap; /* Preserve whitespace */
 }
-
-
 /* Estilo para o botão de voltar ao topo --> */
-
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -61,13 +60,13 @@ pre {
   text-decoration: none;
   font-weight: bold;
 }
-
 .back-to-top:hover {
   background-color: darkgreen;
 }
-
+a {
+  vertical-align: middle;
+}
 /* <-- FIM do estilo para o botão de voltar ao topo */
-
 /* Estilo para botões --> */
 button {
   background-color: var(--primary-color);
@@ -78,20 +77,24 @@ button {
   cursor: pointer;
   font-family: var(--font-family);
 }
-
 button:hover {
   background-color: darkgreen;
 }
 /* <-- FIM do estilo para botões */
-
-
 /* Estilo para listas --> */
 ol {
   list-style-type: decimal;
   padding-left: 20px;
 }
-
 ul {
   list-style-type: disc;
   padding-left: 20px;
+}
+.flex-center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
