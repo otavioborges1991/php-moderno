@@ -75,7 +75,7 @@ button:disabled {
 /* Estilo para botão voltar */
 .back-button {
     background-color: var(--secondary-color);
-    color: white;
+    color: lightcoral;
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
