@@ -8,6 +8,8 @@
     color: #00ff00; /* Green text */
     background-color: #1e1e1e; /* Dark background */
     min-height: 400px;
+    max-height: 800px;
+    min-width: 400px;
     resize: both; /* Allow resizing */
     overflow: hidden auto; /* Enable scrolling */
     border: 2px solid rgb(53, 53, 53); /* Border for the terminal */
@@ -22,6 +24,10 @@
     padding: 5px;
     font-style: bolder;
     text-align: left;
+    position: relative;
+}
+.terminal h1 {
+    margin: 0; /* Remove default margin */
 }
 
 .prompt {

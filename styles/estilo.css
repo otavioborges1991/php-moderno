@@ -4,10 +4,23 @@
 @import url('formulario.css');
 @import url('cores.css');
 @import url('tipografia.css');
+@import url('botoes.css');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  margin-bottom: 10px;
 }
 header {
   background-color: var(--header-bg-color);
@@ -18,7 +31,7 @@ header {
 main {
   padding: 20px;
   font-family: var(--font-family);
-  margin-bottom: 75px;
+  margin-bottom: 300px;
 }
 footer {
   background-color: var(--footer-bg-color);
@@ -67,19 +80,7 @@ a {
   vertical-align: middle;
 }
 /* <-- FIM do estilo para o botão de voltar ao topo */
-/* Estilo para botões --> */
-button {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: var(--font-family);
-}
-button:hover {
-  background-color: darkgreen;
-}
+
 /* <-- FIM do estilo para botões */
 /* Estilo para listas --> */
 ol {
@@ -90,6 +91,7 @@ ul {
   list-style-type: disc;
   padding-left: 20px;
 }
+/* <-- FIM do estilo para listas */
 .flex-center-items {
   display: flex;
   justify-content: center;
@@ -97,4 +99,19 @@ ul {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  margin: 10px;
+  
+}
+.border-radius {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  max-width: fit-content;
+  max-height: fit-content;
+  
+}
+.text-align-center {
+  text-align: center;
+  margin: 20px 0;
 }

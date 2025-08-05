@@ -52,19 +52,11 @@
                 <p>
                     <strong>Observação:</strong> Em PHP, ao realizar operações com strings que contêm números, o PHP tenta converter as strings em números. No entanto, se as strings não forem numéricas, o resultado pode ser inesperado.
                 </p>
-                <p>
-                    Ordem de Precedência:
-                </p>
-                <ol>
-                    <li> () Parenteses</li>
-                    <li> ** Potenciação</li>
-                    <li> * Multiplicação, / Divisão, % Resto</li>
-                    <li> + Adição, - Subtração</li>
-                </ol>
+
             </div>
         </div>
         <br>
-        <button onclick="window.history.back()">Voltar</button>
+        <button class="back-button"  onclick="window.history.back()">Voltar</button>
     </main>
     <footer>
         <p>Desenvolvido por Otávio Vinicios Borges</p>

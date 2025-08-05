@@ -51,7 +51,7 @@
             ?>
         </div>
         <br>
-        <button onclick="window.history.back()">Voltar</button>
+        <button class="back-button"  onclick="window.history.back()">Voltar</button>
     </main>
 
     <footer>

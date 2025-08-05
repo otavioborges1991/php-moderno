@@ -34,7 +34,7 @@
             </div>
         </div>
         <br>
-        <button onclick="window.history.back()">Voltar</button>
+        <button class="back-button"  onclick="window.history.back()">Voltar</button>
     </main>
     <footer>
         <p>Desenvolvido por Otávio Vinicios Borges</p>
