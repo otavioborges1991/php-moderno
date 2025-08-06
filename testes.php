@@ -1,10 +1,10 @@
 <?php
-// cada um desses exemplos imprime um valor diferente
-echo 10 / 3 + 2 ** 2 . "\n";
-echo (10 / 3) + 2 ** 2 . "\n";
-echo 10 / 3 + (2 ** 2) . "\n";
-echo (10 / 3) + (2 ** 2) . "\n";
-// os quatro exemplos acima imprimem o mesmo valor
-echo 10 / (3 + 2) ** 2 . "\n";
-echo (10 / 3 + 2) ** 2 . "\n";
-echo (10 / (3 + 2)) ** 2 . "\n";
+// cotação do dólar copiada do google hoje (05/08/2025)
+$cotacao = 5.50;
+// valor da carteira em reais
+$carteira = 1000; // valor em reais
+// conversão do valor da carteira para dólares
+$carteiraDolar = $carteira / $cotacao; // valor em dólares
+// formatação do valor da carteira em dólares com internacionalização
+$padrão = numfmt_create('pt_BR', NumberFormatter::CURRENCY);
+echo "Seus R\$" . numfmt_format_currency($padrão, $carteira, 'BRL') . " equivalem a " . numfmt_format_currency($padrão, $carteiraDolar, 'USD') . " dólares americanos.";

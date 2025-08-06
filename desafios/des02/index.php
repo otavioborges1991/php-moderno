@@ -16,7 +16,7 @@ $numero = random_int(0, 100);
         <h1>Antecessor e Sucessor</h1>
         <p>Usa php simples para os números antecessores e sucessores de um outro número</p>
     </header>
-    <main class="flex-center-items flex-center-content border-radius">
+    <main class="flex-center-items flex-center-content border">
         <h1>Números aleátorios</h1>
         <p>Gerando um número aleátorio entre 0 e 100</p>
         <p>O número gerado foi: <strong><?php echo $numero; ?></strong></p>

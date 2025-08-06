@@ -31,6 +31,7 @@ header {
 main {
   padding: 20px;
   font-family: var(--font-family);
+  min-height: 80vh; /* ou 100vh, se preferir */
   margin-bottom: 300px;
 }
 footer {
@@ -94,18 +95,15 @@ ul {
 /* <-- FIM do estilo para listas */
 .flex-center-items {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
   margin: 10px;
   
 }
-.border-radius {
-  border-radius: 10px;
-  padding: 20px;
-  background-color: var(--secondary-color);
+.border {
   border: 1px solid var(--primary-color);
   max-width: fit-content;
   max-height: fit-content;
