@@ -31,8 +31,7 @@ header {
 main {
   padding: 20px;
   font-family: var(--font-family);
-  min-height: 80vh; /* ou 100vh, se preferir */
-  margin-bottom: 300px;
+  margin-bottom: 400px;
 }
 footer {
   background-color: var(--footer-bg-color);
@@ -103,6 +102,17 @@ ul {
   margin: 10px;
   
 }
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* ou center, se preferir */
+  gap: 20px; /* espaço entre as divs */
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap; /* permite quebrar linha em telas pequenas */
+
+}
+
 .border {
   border: 1px solid var(--primary-color);
   max-width: fit-content;
@@ -112,4 +122,13 @@ ul {
 .text-align-center {
   text-align: center;
   margin: 20px 0;
+}
+
+.resultado {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  padding: 15px;
+  margin: 20px 0;
+  max-width: fit-content;
+  display: inline-block;
 }
