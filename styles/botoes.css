@@ -4,22 +4,26 @@
 
 /* Estilo para botões --> */
 
-button { /* botão generico */
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: var(--font-family);
+button {
+    /* botão generico */
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-family);
 }
+
 button:hover {
-  background-color: darkgreen;
+    background-color: darkgreen;
 }
+
 button:disabled {
-  background-color: lightgray;
-  cursor: not-allowed;
+    background-color: lightgray;
+    cursor: not-allowed;
 }
+
 /* Estilo para o botão de voltar ao topo */
 .back-to-top {
     position: fixed;
@@ -32,9 +36,11 @@ button:disabled {
     text-decoration: none;
     font-weight: bold;
 }
+
 .back-to-top:hover {
     background-color: darkgreen;
 }
+
 /* Estilo para botões de ação */
 .action-button {
     background-color: var(--primary-color);
@@ -44,6 +50,7 @@ button:disabled {
     text-decoration: none;
     font-weight: bold;
 }
+
 .action-button:hover {
     background-color: darkgreen;
 }
@@ -57,9 +64,11 @@ button:disabled {
     text-decoration: none;
     font-weight: bold;
 }
+
 .cancel-button:hover {
     background-color: darkred;
 }
+
 /* Estilo para botões de salvar */
 .save-button {
     background-color: var(--primary-color);
@@ -69,11 +78,14 @@ button:disabled {
     text-decoration: none;
     font-weight: bold;
 }
+
 .save-button:hover {
     background-color: darkgreen;
 }
+
 /* Estilo para botão voltar */
 .back-button {
+    position: fixed;
     background-color: var(--secondary-color);
     color: lightcoral;
     padding: 10px 15px;
@@ -81,6 +93,7 @@ button:disabled {
     text-decoration: none;
     font-weight: bold;
 }
+
 .back-button:hover {
     background-color: darkred;
 }
