@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+div.resultado {
+    gap: 0px;
+}
+div.resultado > div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 3em;
+    text-align: center;
+}
+div.divisor {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+div.equal {
+    border-left: 3px solid black;
+}

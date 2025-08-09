@@ -1,0 +1,7 @@
+# caixa eletronico
+
+## tarefas
+
+[] formulario com um valor em reais para informar
+[] caixa com resultado mostrando quantas cedulas de cada valor entregar, com images de cada nota, de 100, 50, 10 e 5
+somente valores multiplos de 5.

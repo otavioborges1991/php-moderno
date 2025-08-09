@@ -26,9 +26,9 @@
             </div>
         </div>
         <br>
-        <button onclick="window.history.back()">Voltar</button>
     </main>
     <footer>
+        <button onclick="window.history.back()">Voltar</button>
         <p>Desenvolvido por Otávio Vinicios Borges</p>
     </footer>
 </body>

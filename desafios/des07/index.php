@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 00</title>
+    <title>Desafio 07</title>
     <link rel="stylesheet" href="../../styles/estilo.css">
 </head>
+
 <body>
     <header>
         <h1>
-            Aula 00 - Template
+            Desafio 7 - Analisador de Salario
         </h1>
     </header>
     <main>
         <div class="margin">
-            <h2>Exercicios</h2>
-            <ul>
-                <li>
-                    <a class="file" target="_self" href="">
-                        Exercício 00
-                    </a>
-                </li>
-            </ul>
+
         </div>
     </main>
     <footer>
@@ -36,4 +31,5 @@
         </p>
     </footer>
 </body>
+
 </html>

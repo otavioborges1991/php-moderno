@@ -17,23 +17,31 @@ body {
   width: 100vw;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--primary-color);
   font-family: var(--font-family);
   margin-bottom: 10px;
 }
+
 header {
   background-color: var(--header-bg-color);
   color: white;
   padding: 10px 20px;
   text-align: center;
 }
+
 main {
   min-height: 100vh;
   padding: 20px;
   font-family: var(--font-family);
   padding-bottom: 350px;
 }
+
 footer {
   background-color: var(--footer-bg-color);
   color: white;
@@ -43,9 +51,11 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
 div.margin {
   margin: 20px;
 }
+
 div.notas {
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
@@ -54,14 +64,18 @@ div.notas {
   max-width: fit-content;
   display: inline-block;
 }
+
 div.flex-row {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 pre {
-  white-space: pre-wrap; /* Preserve whitespace */
+  white-space: pre-wrap;
+  /* Preserve whitespace */
 }
+
 /* Estilo para o botão de voltar ao topo --> */
 .back-to-top {
   position: fixed;
@@ -74,12 +88,15 @@ pre {
   text-decoration: none;
   font-weight: bold;
 }
+
 .back-to-top:hover {
   background-color: darkgreen;
 }
+
 a {
   vertical-align: middle;
 }
+
 /* <-- FIM do estilo para o botão de voltar ao topo */
 
 /* <-- FIM do estilo para botões */
@@ -88,10 +105,12 @@ ol {
   list-style-type: decimal;
   padding-left: 20px;
 }
+
 ul {
   list-style-type: disc;
   padding-left: 20px;
 }
+
 /* <-- FIM do estilo para listas */
 .flex-center-items {
   display: flex;
@@ -101,25 +120,30 @@ ul {
   gap: 20px;
   padding: 20px;
   margin: 10px;
-
 }
+
 .flex-row-center {
   display: flex;
   flex-direction: row;
-  align-items: center; /* ou center, se preferir */
-  gap: 20px; /* espaço entre as divs */
+  align-items: center;
+  /* ou center, se preferir */
+  gap: 20px;
+  /* espaço entre as divs */
   justify-content: center;
   width: 100%;
-  flex-wrap: nowrap; /* permite quebrar linha em telas pequenas */
+  flex-wrap: nowrap;
+  /* permite quebrar linha em telas pequenas */
 
 }
 
 .border {
   border: 1px solid var(--primary-color);
+  border-radius: 15px;
   max-width: fit-content;
   max-height: fit-content;
   padding: 25px;
 }
+
 .text-align-center {
   text-align: center;
   margin: 20px 0;
@@ -133,6 +157,7 @@ ul {
   max-width: fit-content;
   display: inline-block;
 }
+
 .content {
   min-width: 70vw;
   min-height: 70vh;
@@ -140,5 +165,5 @@ ul {
   border-radius: 20px;
   margin: 30px;
   padding: 32px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
