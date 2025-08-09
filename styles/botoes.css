@@ -92,8 +92,8 @@ button:disabled {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    bottom: 20px;
-    left: 20px;
+    bottom: auto;
+    left: 10%;
     z-index: 1001;
     float: left;
 }

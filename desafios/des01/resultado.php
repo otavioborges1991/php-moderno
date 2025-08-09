@@ -19,9 +19,9 @@
             <p>O antecessor é: <strong><?php echo $_GET['numero'] - 1; ?></strong></p>
             <p>O sucessor é: <strong><?php echo $_GET['numero'] + 1; ?></strong></p>
         </fieldset>
-        <button class="back-button" onclick="window.history.back()">Voltar</button>
     </main>
     <footer>
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
         <p>
             <a class="link" target="_blank" rel="noopener" href="https://www.estudonauta.com/">
                 Estudonauta

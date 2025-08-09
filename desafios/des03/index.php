@@ -49,9 +49,9 @@ $valorConvertido = round($valorConvertido, 2); // Arredondar para duas casas dec
             echo "<p class='text-align-center'>" . numfmt_format_currency($padrao, $valorConvertido, $moeda) . "</p>";
             ?>
         </div>
-        <button class="back-button" onclick="window.history.back()">Voltar</button>
     </main>
     <footer>
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
         <p>
             <a class="link" target="_blank" rel="noopener" href="https://www.estudonauta.com/">
                 Estudonauta

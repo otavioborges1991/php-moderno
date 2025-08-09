@@ -92,9 +92,9 @@
             </ol>
         </div>
         <br>
-        <button class="back-button"  onclick="window.history.back()">Voltar</button>
     </main>
     <footer>
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
         <p>Desenvolvido por Otávio Vinicios Borges</p>
     </footer>
 </body>

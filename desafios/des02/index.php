@@ -21,9 +21,9 @@ $numero = random_int(0, 100);
         <p>Gerando um número aleátorio entre 0 e 100</p>
         <p>O número gerado foi: <strong><?php echo $numero; ?></strong></p>
         <button class="action-button" onclick="window.location.reload()">Gerar outro</button>
-        <button class="back-button" onclick="window.history.back()">Voltar</button>
     </main>
     <footer>
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
         <p>
             <a class="link" target="_blank" rel="noopener" href="https://www.estudonauta.com/">
                 Estudonauta

@@ -10,14 +10,9 @@
 </head>
 <?php
 $dividendo = $_POST['dividendo'] ?? 0;
-$divisor = $_POST['divisor'] ?? 0;
-if ($dividendo != 0 || $divisor != 0) {
-    $resto = $dividendo % $divisor;
-    $equal = intdiv($dividendo, $divisor);
-} else {
-    $resto = 0;
-    $equal = 0;
-}
+$divisor = $_POST['divisor'] ?? 1;
+$resto = $dividendo % $divisor;
+$quociente = intdiv($dividendo, $divisor);
 ?>
 
 <body>
@@ -27,33 +22,28 @@ if ($dividendo != 0 || $divisor != 0) {
         </h1>
     </header>
     <main class="flex-center-items">
-        <div class="margin border">
-            <fieldset>
-                <legend>Divisão</legend>
-                <form action="" method="post">
-                    <label for="dividendo">Dividendo</label>
-                    <input type="number" min="1" name="dividendo" id="divisor" required placeholder="Digite um Número">
-                    <label for="divisor">Divisor</label>
-                    <input type="number" min="1" name="divisor" id="divisor" required placeholder="Digite um número">
-                    <button class="action-button" type="submit">Calcular</button>
-                </form>
-            </fieldset>
-        </div>
-        <div class="resultado">
-            <div class="dividendo">
-                <?php echo "$dividendo" ?>
-            </div>
-            <div class="divisor">
-                <?php echo "$divisor" ?>
-            </div>
-            <br>
-            <div class="resto">
-                <?php echo "$resto" ?>
-            </div>
-            <div class="equal">
-                <?php echo "$equal" ?>
-            </div>
 
+        <fieldset>
+            <legend>Divisão</legend>
+            <form action="" method="post">
+                <label for="dividendo">Dividendo</label>
+                <input type="number" min="0" name="dividendo" id="divisor" required placeholder="Digite um Número">
+                <label for="divisor">Divisor</label>
+                <input type="number" min="1" name="divisor" id="divisor" required placeholder="Digite um número">
+                <button class="action-button" type="submit">Calcular</button>
+            </form>
+        </fieldset>
+        <div class="resultado">
+            <table class="divisão">
+                <tr>
+                    <td><?php echo "$dividendo" ?></td>
+                    <td><?php echo "$divisor" ?></td>
+                </tr>
+                <tr>
+                    <td><?php echo "$resto" ?></td>
+                    <td><?php echo "$quociente" ?></td>
+                </tr>
+            </table>
         </div>
     </main>
     <footer>

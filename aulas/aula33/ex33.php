@@ -87,6 +87,7 @@
 
     </main>
     <footer>
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
         <p>
             <a class="link" target="_blank" rel="noopener" href="https://www.estudonauta.com/">
                 Estudonauta
