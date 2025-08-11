@@ -17,7 +17,7 @@
     <main class="flex-center-items">
         <fieldset>
             <legend>Raizes</legend>
-            <form action="" method="post">
+            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
                 <label for="valor">Valor</label>
                 <input type="number" name="valor" id="valor" required placeholder="Digite um número">
                 <input class="action-button" type="submit" value="Calcular">

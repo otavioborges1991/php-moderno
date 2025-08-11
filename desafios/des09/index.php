@@ -24,7 +24,7 @@
     <main class="flex-center-items">
         <fieldset>
             <legend>Valores</legend>
-            <form action="" method="post">
+            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
                 <div class="margin">
                     <label for="peso1">Peso 1</label>
                     <input class="short" step="0.1" type="number" name="peso1" id="peso1" required>
