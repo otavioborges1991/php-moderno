@@ -86,4 +86,6 @@ div.inputs {
     justify-content: space-evenly;
 }
 
-/* Estilo para campos de seleção (select) */
+input[type="number"] {
+    width: 3.5em;
+}

@@ -28,7 +28,7 @@
             $valor = $_POST['valor'] ?? 0;
             $quadrada = number_format(sqrt($valor), 2);
             $cubica = number_format(pow($valor, 1 / 3), 2);
-            echo "A raiz quadrada de $valor é $quadrada, e a cúbica é $cubica.";
+            echo "A raiz quadrada de <strong>$valor</strong> é <strong>$quadrada</strong>, e a cúbica é <strong>$cubica</strong>.";
             ?>
 
         </div>
