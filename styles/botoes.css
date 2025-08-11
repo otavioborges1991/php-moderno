@@ -49,6 +49,7 @@ button:disabled {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    border: 1px solid yellowgreen;
 }
 
 .action-button:hover {
