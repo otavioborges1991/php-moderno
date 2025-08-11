@@ -21,7 +21,7 @@
         <div class="margin">
             <fieldset>
                 <legend>Informe um Número Real</legend>
-                <form action="" method="post">
+                <form action="index.php" method="post">
                     <input type="number" name="valor" id="valor" step="any" placeholder="Digite um número real" required>
                     <button class="action-button" type="submit">Analisar</button>
                 </form>

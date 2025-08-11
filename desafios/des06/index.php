@@ -25,7 +25,7 @@ $quociente = intdiv($dividendo, $divisor);
 
         <fieldset>
             <legend>Divisão</legend>
-            <form action="" method="post">
+            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
                 <label for="dividendo">Dividendo</label>
                 <input type="number" min="0" name="dividendo" id="divisor" required placeholder="Digite um Número">
                 <label for="divisor">Divisor</label>

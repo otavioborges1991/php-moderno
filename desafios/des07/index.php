@@ -7,6 +7,10 @@
     <title>Desafio 07</title>
     <link rel="stylesheet" href="../../styles/estilo.css">
 </head>
+<?php
+$salario_minimo = 1528;
+
+?>
 
 <body>
     <header>
@@ -14,9 +18,27 @@
             Desafio 7 - Analisador de Salario
         </h1>
     </header>
-    <main>
-        <div class="margin">
-
+    <main class="flex-center-items">
+        <fieldset>
+            <legend>Salário Minimo</legend>
+            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+                <label for="salario">Salário</label>
+                <input type="number" name="salario" id="salario" required placeholder="1.518,00">
+                <input class="action-button" type="submit" value="Calcular">
+            </form>
+        </fieldset>
+        <div class="resultado">
+            <?php
+            $salario = $_POST['salario'] ?? null;
+            if (isset($salario)) {
+                $salarios_minimos = intdiv($salario, $salario_minimo);
+                $resto = $salario % $salario_minimo;
+                $frase = $salarios_minimos >= 2 ? "salarios minimos" : "salario minimo";
+                echo "Seu salário é \$$salario<br> é o equivalente a $salarios_minimos $frase<br>mais \$$resto reais.";
+            } else {
+                echo "Esperando formulário";
+            }
+            ?>
         </div>
     </main>
     <footer>
